@@ -30,10 +30,11 @@ import (
 	"time"
 	"unsafe"
 
+	//TODO: google.golang.org/protobuf
 	"github.com/golang/protobuf/proto"
 
-	pb "github.com/golang/groupcache/groupcachepb"
-	testpb "github.com/golang/groupcache/testpb"
+	pb "github.com/LasseJacobs/groupcache/groupcachepb"
+	testpb "github.com/LasseJacobs/groupcache/testpb"
 )
 
 var (
