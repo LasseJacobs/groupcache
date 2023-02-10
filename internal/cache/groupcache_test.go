@@ -16,7 +16,7 @@ limitations under the License.
 
 // Tests for groupcache.
 
-package groupcache
+package cache
 
 import (
 	"context"
@@ -33,8 +33,8 @@ import (
 	//TODO: google.golang.org/protobuf
 	"github.com/golang/protobuf/proto"
 
-	pb "github.com/LasseJacobs/groupcache/groupcachepb"
-	testpb "github.com/LasseJacobs/groupcache/testpb"
+	pb "github.com/LasseJacobs/groupcache/internal/consistenthash"
+	"github.com/LasseJacobs/groupcache/internal/testpb"
 )
 
 var (

@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package groupcache
+package http
 
 import (
 	"bytes"
@@ -109,6 +109,7 @@ func NewHTTPPoolOpts(self string, o *HTTPPoolOptions) *HTTPPool {
 	}
 	p.peers = consistenthash.New(p.opts.Replicas, p.opts.HashFn)
 
+	//TODO: mmm not sure I like this; would prefer an explicit reference
 	RegisterPeerPicker(func() PeerPicker { return p })
 	return p
 }
